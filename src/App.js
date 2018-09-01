@@ -34,7 +34,6 @@ class App extends Component {
 
   render() {
     const {results} = this.state
-    // console.log(results);
 
     return (
       <div className="train-fair-widget">
