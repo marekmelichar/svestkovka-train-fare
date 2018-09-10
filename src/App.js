@@ -20,7 +20,7 @@ class App extends Component {
 
     await axios.get('/train_fare.json')
       .then(response => {
-        let results = response.data.filter(item => item.FIELD2 === from && item.FIELD3 === to)
+        let results = response.data.filter(item => item.FIELD2 === from && item.FIELD3 === to || item.FIELD2 === to && item.FIELD3 === from)
         this.setState({
           results,
           from,
@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   render() {
-    const {results} = this.state
+    const {results, from, to} = this.state
 
     return (
       <div className="train-fair-widget">
@@ -73,8 +73,8 @@ class App extends Component {
             <tbody>
               {results.map(row => {
                 return <tr key={row.FIELD2}>
-                  <td>{row.FIELD2}</td>
-                  <td>{row.FIELD3}</td>
+                  <td>{from}</td>
+                  <td>{to}</td>
                   <td>{row.FIELD4}</td>
                   <td>{row.FIELD5}</td>
                   <td>{row.FIELD6}</td>
