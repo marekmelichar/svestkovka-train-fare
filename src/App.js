@@ -41,19 +41,19 @@ class App extends Component {
           <table className="table">
             <thead>
               <tr>
-                <th scope="col">Z</th>
-                <th scope="col">Kam</th>
+                <th scope="col" className="border-bottom-none"></th>
+                <th scope="col" className="border-bottom-none"></th>
                 <th scope="col" colSpan="2">Dospělý 15+</th>
                 <th scope="col" colSpan="2">Dítě 6-15</th>
-                <th scope="col" colSpan="2">student 15-26</th>
-                <th scope="col" colSpan="2">žák 6-15</th>
+                <th scope="col" colSpan="2">Student 15-26</th>
+                <th scope="col" colSpan="2">Žák 6-15</th>
                 <th scope="col" colSpan="2">ZTP+ZTP/P</th>
                 <th scope="col" colSpan="2">Pes</th>
                 <th scope="col" colSpan="2">Kolo</th>
               </tr>
               <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
+                <th scope="col" className="border-top-none">Odkud:</th>
+                <th scope="col" className="border-top-none">Kam:</th>
                 <th scope="col">1 jízda</th>
                 <th scope="col">denní</th>
                 <th scope="col">1 jízda</th>

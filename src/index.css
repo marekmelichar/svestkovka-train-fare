@@ -1,5 +1,50 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.border-top-none {
+  border-top: none !important;
+}
+
+.border-bottom-none {
+  border-bottom: none !important;
+}
+
+#table_of_train_fare {
+  border-top: none;
+  border-left: 1px solid #005194;
+  border-right: 1px solid #005194;
+  border-bottom: 1px solid #005194;
+  color: #005194;
+}
+
+#table_of_train_fare .table thead th {
+  border-bottom: 1px solid #005194;
+  border-right: 1px solid #005194;
+}
+
+#table_of_train_fare .table thead th:nth-child(1) {
+  border-right: none;
+}
+
+#table_of_train_fare .table thead th:last-child {
+  border-right: none;
+}
+
+#table_of_train_fare .table td,
+#table_of_train_fare .table th {
+  font-size: 0.75rem;
+  border-top: 1px solid #005194;
+}
+
+#table_of_train_fare .table td {
+  border-right: 1px solid #005194;
+}
+
+#table_of_train_fare .table td:nth-child(1) {
+  border-right: none;
+}
+
+#table_of_train_fare .table {
+  margin-bottom: 0;
+}
+
+#table_of_train_fare .table thead {
+  background: #F3F3F3;
 }
