@@ -43,13 +43,13 @@ class App extends Component {
               <tr>
                 <th scope="col" className="border-bottom-none"></th>
                 <th scope="col" className="border-bottom-none"></th>
-                <th scope="col" colSpan="2">Dospělý 15+</th>
-                <th scope="col" colSpan="2">Dítě 6-15</th>
-                <th scope="col" colSpan="2">Student 15-26</th>
-                <th scope="col" colSpan="2">Žák 6-15</th>
-                <th scope="col" colSpan="2">ZTP+ZTP/P</th>
-                <th scope="col" colSpan="2">Pes</th>
-                <th scope="col" colSpan="2">Kolo</th>
+                <th scope="col" colSpan="2" className="text-center">Dospělý 15+</th>
+                <th scope="col" colSpan="2" className="text-center">Dítě 6-15</th>
+                <th scope="col" colSpan="2" className="text-center">Student 15-26</th>
+                <th scope="col" colSpan="2" className="text-center">Žák 6-15</th>
+                <th scope="col" colSpan="2" className="text-center">ZTP+ZTP/P</th>
+                <th scope="col" colSpan="2" className="text-center">Pes</th>
+                <th scope="col" colSpan="2" className="text-center">Kolo</th>
               </tr>
               <tr>
                 <th scope="col" className="border-top-none">Odkud:</th>
@@ -75,20 +75,20 @@ class App extends Component {
                 return <tr key={row.FIELD2}>
                   <td>{from}</td>
                   <td>{to}</td>
-                  <td>{row.FIELD4}</td>
-                  <td>{row.FIELD5}</td>
-                  <td>{row.FIELD6}</td>
-                  <td>{row.FIELD7}</td>
-                  <td>{row.FIELD8}</td>
-                  <td>{row.FIELD9}</td>
-                  <td>{row.FIELD10}</td>
-                  <td>{row.FIELD11}</td>
-                  <td>{row.FIELD12}</td>
-                  <td>{row.FIELD13}</td>
-                  <td>{row.FIELD14}</td>
-                  <td>{row.FIELD15}</td>
-                  <td>{row.FIELD16}</td>
-                  <td>{row.FIELD17}</td>
+                  <td>{row.FIELD4} Kč</td>
+                  <td>{row.FIELD5} Kč</td>
+                  <td>{row.FIELD6} Kč</td>
+                  <td>{row.FIELD7} Kč</td>
+                  <td>{row.FIELD8} Kč</td>
+                  <td>{row.FIELD9} Kč</td>
+                  <td>{row.FIELD10} Kč</td>
+                  <td>{row.FIELD11} Kč</td>
+                  <td>{row.FIELD12} Kč</td>
+                  <td>{row.FIELD13} Kč</td>
+                  <td>{row.FIELD14} Kč</td>
+                  <td>{row.FIELD15} Kč</td>
+                  <td>{row.FIELD16} Kč</td>
+                  <td>{row.FIELD17} Kč</td>
                 </tr>
               })}
             </tbody>

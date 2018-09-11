@@ -1,3 +1,12 @@
+#train_fare_table {
+  margin-top: 2rem;
+}
+
+#train_fare_table h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .border-top-none {
   border-top: none !important;
 }
@@ -21,16 +30,19 @@
 
 #table_of_train_fare .table thead th:nth-child(1) {
   border-right: none;
+  text-align: left;
 }
 
 #table_of_train_fare .table thead th:last-child {
   border-right: none;
+  text-align: left;
 }
 
 #table_of_train_fare .table td,
 #table_of_train_fare .table th {
   font-size: 0.75rem;
   border-top: 1px solid #005194;
+  text-align: center;
 }
 
 #table_of_train_fare .table td {
